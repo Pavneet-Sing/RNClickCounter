@@ -9,12 +9,11 @@
 import React, { useState } from "react";
 import {
   SafeAreaView,
-  StyleSheet,
   Text,
   StatusBar,
-  Button,
-  View
 } from 'react-native';
+import CustomButton from './src/components/CustomButton';
+import styles from './src/config/styles';
 
 const App: () => React$Node = () => {
 
@@ -31,38 +30,13 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={styles.container}>
-        <Text style={styles.textCounter} >{count}</Text>
-        <View style={styles.buttonStyle}>
-          <Button
-            onPress={counterPlus}
-            title='+' />
-        </View>
-        <View style={styles.buttonStyle}>
-          <Button
-            onPress={counterMinus}
-            title='-' />
-        </View>
+      <SafeAreaView style={styles.centerContainer}>
+        <Text style={styles.bigText} >{count}</Text>
+        <CustomButton style={styles.EightyWidthStyle} onPress={counterPlus} title={'+'} />
+        <CustomButton style={styles.EightyWidthStyle} onPress={counterMinus} title={'-'} />
       </SafeAreaView>
     </>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#e6e6fa',
-  },
-  textCounter: {
-    fontSize: 28,
-    color: '#000',
-  },
-  buttonStyle: {
-    width: "80%",
-    margin: 10,
-  }
-});
 
 export default App;
