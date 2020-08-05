@@ -11,9 +11,12 @@ The app uses `App.js` functional compoenent with state mangement to store and re
 – FlexBox Style
 - Recommended Project Structure
 
+<img src="/screenshots/RNCC.gif" width="250" height="400"/>
+
+
 Notes
 -----
-ReactNative 0.63 is using flow type checker so it can be installed as dev dependency to avoid some type warning in IDE.
+ReactNative 0.63 is using flow type checker so it can be installed as dev dependency to avoid some type warnings in IDE.
 
 License
 -----------
