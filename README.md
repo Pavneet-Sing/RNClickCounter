@@ -4,7 +4,16 @@ A react-native app to increment/decrement the count, based on click.
 
 Introduction
 ------------
+The app uses `App.js` functional compoenent with state mangement to store and read the updated value of count. Addtionally, it include:
+- Button, Text and Click implementations 
+- Custom Components
+- Props
+– FlexBox Style
+- Recommended Project Structure
 
+Notes
+-----
+ReactNative 0.63 is using flow type checker so it can be installed as dev dependency to avoid some type warning in IDE.
 
 License
 -----------
